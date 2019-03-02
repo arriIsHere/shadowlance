@@ -10,6 +10,9 @@
     <title>{{title}} - Shadowlance Campain Setting</title>
     <link rel="stylesheet" type="text/css" href="/lib/css/main.css">
     <link rel="stylesheet" type="text/css" href="/lib/css/fonts.css">
+    {%- for style in styles -%}
+    <link rel="stylesheet" type="text/css" href="/lib/css/{{style}}">
+    {%- endfor -%}
 </head>
 <body>
     <div class="wrapper">
