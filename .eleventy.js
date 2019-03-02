@@ -5,7 +5,6 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: 'src',
-      output: 'dist'
     },
     templateFormats: [
       "md",
@@ -14,9 +13,9 @@ module.exports = function(eleventyConfig) {
       "jpg",
       "png",
       "gif",
-      "njk"
+      "njk",
     ],
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
   }
-  
+
 };
