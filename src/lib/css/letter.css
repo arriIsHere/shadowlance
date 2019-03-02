@@ -1,0 +1,16 @@
+.ribbon
+{
+    font-size: 2.5em;
+    display: inline-block;
+    padding-right: 1em;
+    background-color:  #a50909;
+    color: #DDD;
+}
+
+.letter
+{
+    font-size: 1.5em;
+    margin: 0 auto;
+    width: 20em;
+    background-color: rgb(218, 192, 159);
+}
