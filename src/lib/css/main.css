@@ -1,10 +1,17 @@
+html,
+body
+{
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
 div.wrapper
 {
     display: grid;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "nav nav nav"
         "main main main"
@@ -23,6 +30,8 @@ footer,
     grid-area: footer;
     color: #AAA;
     background-color: #333;
+    text-align: center;
+    font-size: 0.75em;
 }
 
 nav,

@@ -9,6 +9,7 @@
     -->
     <title>{{title}} - Shadowlance Campain Setting</title>
     <link rel="stylesheet" type="text/css" href="/lib/css/main.css">
+    <link rel="stylesheet" type="text/css" href="lib/css/fonts.css">
 </head>
 <body>
     <div class="wrapper">
@@ -19,17 +20,18 @@
             {{content | safe}}
         </main>
         <footer class="footer">
-            <p>&copy; {{ globals.now | date("YYYY") }} Benjamin Blais</p>
-            <p><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+            <p>&copy; {{ globals.now | date("YYYY") }} Benjamin Blais.</p>
+            <p>This work is licensed under a 
+                <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                    Creative Commons Attribution-ShareAlike 4.0 International License
+                </a>.
+            </p>
+            <p class="badge"><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
                 <img alt="Creative Commons License" 
                     style="border-width:0" 
                     src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
                 </p>
             </a>
-            <p>This work is licensed under a 
-                <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
-                    Creative Commons Attribution-ShareAlike 4.0 International License
-                </a>.
         </footer>
     </div>
 </body>
