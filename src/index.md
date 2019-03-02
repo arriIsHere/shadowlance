@@ -1,7 +1,7 @@
 ---
-title: welcome
-layout: template
+title: Welcome
+layout: template.njk
 ---
 # Welcome Adventurers
 
-Welcome all adventures and travelers to the land of shadowlance
+Welcome all adventures and travelers to the land of shadowlance. 

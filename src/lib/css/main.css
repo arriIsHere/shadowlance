@@ -1,0 +1,32 @@
+div.wrapper
+{
+    display: grid;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+}
+
+main,
+.main 
+{
+    grid-area: main;
+}
+
+footer,
+.footer
+{
+    grid-area: footer;
+    color: #AAA;
+    background-color: #333;
+}
+
+nav,
+.nav 
+{
+    grid-area: nav;
+}
