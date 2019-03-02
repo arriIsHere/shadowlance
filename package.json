@@ -1,0 +1,24 @@
+{
+  "name": "shadowlance",
+  "version": "1.0.0",
+  "description": "A Website for managing my D&D campain",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bblais23/shadowlance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bblais23/shadowlance/issues"
+  },
+  "homepage": "https://github.com/bblais23/shadowlance#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1"
+  }
+}
