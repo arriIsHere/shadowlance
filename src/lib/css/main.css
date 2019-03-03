@@ -4,13 +4,17 @@ body
     font-size: 12pt;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 div.wrapper
 {
-    height: 100vh;
+    min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background: 
+    linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)),
+    no-repeat center/cover url('/lib/images/world.png');
     grid-template-areas: 
         "nav nav nav"
         "main main main"
@@ -20,9 +24,8 @@ div.wrapper
 main,
 .main 
 {
-    background: 
-    linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)),
-    no-repeat center/cover url('/lib/images/world.png');
+    padding: 2em;
+    padding-left: 0;
     grid-area: main;
 }
 
