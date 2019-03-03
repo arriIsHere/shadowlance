@@ -1,0 +1,26 @@
+.topnav
+{
+    background-color: rgba(50, 50, 50, 0.5);
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.topnav li a
+{
+    display: block;
+    padding: 1em;
+}
+
+.topnav li a:hover
+{
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.topnav li ul
+{
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+

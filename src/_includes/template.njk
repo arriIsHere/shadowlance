@@ -10,6 +10,7 @@
     <title>{{title}} - Shadowlance Campain Setting</title>
     <link rel="stylesheet" type="text/css" href="/lib/css/main.css">
     <link rel="stylesheet" type="text/css" href="/lib/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/lib/css/nav.css">
     {%- for style in styles -%}
     <link rel="stylesheet" type="text/css" href="/lib/css/{{style}}">
     {%- endfor -%}
@@ -17,7 +18,25 @@
 <body>
     <div class="wrapper">
         <nav class="nav">
-            <!-- TODO: Add Content -->
+            <ul class="topnav">
+                <li><a href="/">Welcome</a></li>
+                <li><a href="/People">People</a>
+                    <ul>
+                    </ul>
+                </li>
+                <li><a href="/Lands">Lands</a>
+                    <ul>
+                    </ul>
+                </li>
+                <li><a href="/Gods">Gods</a>
+                    <ul>
+                    </ul>
+                </li>
+                <li><a href="/Calendar">Calendar</a>
+                    <ul>
+                    </ul>
+                </li>
+            </ul>
         </nav>
         <main class="main">
             {{content | safe}}
