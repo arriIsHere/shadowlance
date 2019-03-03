@@ -8,9 +8,8 @@ body
 
 div.wrapper
 {
-    display: grid;
     height: 100vh;
-    width: 100vw;
+    display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "nav nav nav"
