@@ -19,10 +19,11 @@ main,
     display: inline-block;
     padding: 0.25em;
     padding-left: 0;
-    background-color:  #a50909;
+    background-image: url('/lib/images/ribbon-fabric.png');
+    background-color: #a50909;
     color: #DDD;
 
-    box-shadow: 0.1em 0.1em 0.1em rgba(100, 100, 100, 0.7)
+    box-shadow: 0.1em 0.1em 0.1em rgba(100, 100, 100, 0.7);
 }
 
 .ribbon .ribbon-wrap
@@ -44,6 +45,7 @@ main,
     font-size: 1.75em;
     width: 50%;
     min-width: 16em;
+    background: url('/lib/images/black-felt.png');
     background-color: rgb(218, 192, 159);
 }
 
