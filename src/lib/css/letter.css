@@ -1,16 +1,65 @@
+main,
+.main
+{
+    align-content: start;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "ribbon"
+        "letter";
+}
+
 .ribbon
 {
-    font-size: 2.5em;
+    /* Grid Stuff */
+    justify-self: left;
+    grid-area: ribbon;
+
+    font-size: 3em;
     display: inline-block;
-    padding-right: 1em;
+    padding: 0.25em;
+    padding-left: 0;
     background-color:  #a50909;
     color: #DDD;
+
+    box-shadow: 0.1em 0.1em 0.1em rgba(100, 100, 100, 0.7)
+}
+
+.ribbon .ribbon-wrap
+{
+    display: inline-block;
+    padding: 0.25em 1em 0.25em 0.25em;
+    border-right: dashed #DDD;
+    border-bottom: dashed #DDD;
+    border-top: dashed #DDD;
 }
 
 .letter
 {
-    font-size: 1.5em;
-    margin: 0 auto;
-    width: 20em;
+    /* Grid Stuff */
+    justify-self: center;
+    grid-area: letter;
+
+    padding: 2em;
+    font-size: 1.75em;
+    width: 50%;
+    min-width: 16em;
     background-color: rgb(218, 192, 159);
+}
+
+.letter h5
+{
+    text-align: right;
+    font-family: 'Tangerine';
+    font-size: 2em;
+}
+
+.letter h5::before
+{
+    content: '—';
+}
+
+.letter h6
+{
+    text-align: right;
 }

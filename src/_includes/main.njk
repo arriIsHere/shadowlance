@@ -3,7 +3,9 @@ styles:
     - letter.css
 layout: template.njk
 ---
-<h1 class="ribbon">{{title}}</h1>
+<h1 class="ribbon">
+    <span class="ribbon-wrap">{{title}}</span>
+</h1>
 <article class="letter">
     {{content | safe}}
 </article>
