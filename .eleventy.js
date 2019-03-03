@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('date', function(value, format) {
     return Moment(value).format(format);
   });
-  
+
   return {
     dir: {
       input: 'src',
@@ -17,6 +17,8 @@ module.exports = function(eleventyConfig) {
       "png",
       "gif",
       "njk",
+      "otf",
+      "woff",
     ],
     passthroughFileCopy: true,
   }
