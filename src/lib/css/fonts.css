@@ -10,6 +10,12 @@
     src: url('/lib/fonts/Fondamento-Regular.woff');
 }
 
+html,
+body
+{
+    font-family: 'Fondamento';
+}
+
 p,
 h1,
 h2,
@@ -18,7 +24,6 @@ h4,
 h5,
 h6
 {
-    font-family: 'Fondamento';
     line-height: 1em;
     margin: 0;
     padding: 0.25em 0; 
