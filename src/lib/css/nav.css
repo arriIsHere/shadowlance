@@ -1,3 +1,11 @@
+nav,
+.nav
+{
+    position: sticky;
+    top: -0.25em;
+    z-index: 1;
+}
+
 .topnav
 {
     background-color: rgba(50, 50, 50, 0.5);
@@ -15,12 +23,5 @@
 .topnav li a:hover
 {
     background-color: rgba(50, 50, 50, 0.5);
-}
-
-.topnav li ul
-{
-    height: 0;
-    overflow: hidden;
-    list-style-type: none;
 }
 
