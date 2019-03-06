@@ -14,7 +14,7 @@ div.wrapper
     grid-template-rows: auto 1fr auto;
     background: 
     linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)),
-    no-repeat center/cover url('/lib/images/world.png');
+    no-repeat fixed center/cover url('/lib/images/world.png');
     grid-template-areas: 
         "nav nav nav"
         "main main main"
