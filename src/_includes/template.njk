@@ -19,23 +19,9 @@
     <div class="wrapper">
         <nav class="nav">
             <ul class="topnav">
-                <li><a href="/">Welcome</a></li>
-                <li><a href="/People">People</a>
-                    <ul>
-                    </ul>
-                </li>
-                <li><a href="/Lands">Lands</a>
-                    <ul>
-                    </ul>
-                </li>
-                <li><a href="/Gods">Gods</a>
-                    <ul>
-                    </ul>
-                </li>
-                <li><a href="/Calendar">Calendar</a>
-                    <ul>
-                    </ul>
-                </li>
+            {%- for page in collections.all -%}
+                <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+            {%- endfor -%}
             </ul>
         </nav>
         <main class="main">
