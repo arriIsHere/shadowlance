@@ -1,6 +1,7 @@
 ---
 title: Pantheon
 layout: main.njk
+tags: topic
 ---
 # Pantheon of Shadowlance
 

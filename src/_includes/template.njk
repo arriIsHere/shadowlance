@@ -19,7 +19,7 @@
     <div class="wrapper">
         <nav class="nav">
             <ul class="topnav">
-            {%- for page in collections.all -%}
+            {%- for page in collections.topic -%}
                 <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
             {%- endfor -%}
             </ul>

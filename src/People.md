@@ -4,6 +4,7 @@ layout: main.njk
 styles:
     - letter.css
     - largeLetter.css
+tags: topic
 ---
 # The Races of Shadowlance
 

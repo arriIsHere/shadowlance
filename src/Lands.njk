@@ -1,0 +1,18 @@
+---
+title: Lands
+layout: main.njk
+styles:
+    - letter.css
+    - largeLetter.css
+tags: topic
+---
+
+<h1>The Lands Of Shadowlance</h1>
+
+<p>Across the continent, there are many geographic locales, each filled with its own unique culture and government along with its own unique mixture of people.</p>
+
+<ul>
+{%- for page in collections.lands -%}
+    <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+{%- endfor -%}
+</ul>

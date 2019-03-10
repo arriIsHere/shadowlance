@@ -1,6 +1,7 @@
 ---
 title: Welcome
 layout: main.njk
+tags: topic
 ---
 # A Letter from Josa
 
