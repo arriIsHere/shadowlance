@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://admiring-lamarr-2c2225.netlify.com/* http://shadowlance.benblais.com/:splat 301!
