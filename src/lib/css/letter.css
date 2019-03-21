@@ -15,13 +15,12 @@ main,
 .ribbon
 {
     /* Grid Stuff */
-    justify-self: left;
+    justify-self: right;
     grid-area: ribbon;
 
     font-size: 3em;
     display: inline-block;
     padding: 0.25em;
-    padding-left: 0;
     background-image: url('/lib/images/ribbon-fabric.png');
     background-color: #a50909;
     color: #DDD;
@@ -31,9 +30,7 @@ main,
 {
     display: inline-block;
     padding: 0.25em 1em 0.25em 0.25em;
-    border-right: dashed #DDD;
-    border-bottom: dashed #DDD;
-    border-top: dashed #DDD;
+    border: dashed #DDD;
 }
 
 .letter
@@ -41,14 +38,10 @@ main,
     /* Grid Stuff */
     justify-self: center;
     grid-area: letter;
-
-    padding: 2em;
+    padding: 0.5em;
     font-size: 1.75em;
-    width: 50%;
-    min-width: 16em;
     background: url('/lib/images/black-felt.png');
     background-color: rgb(218, 192, 159);
-    clip-path: polygon(100% 0%, 96% 4%, 100% 9%, 92% 10%, 100% 17%, 98% 23%, 100% 27%, 97% 31%, 100% 37%, 96% 42%, 97% 47%, 99% 53%, 100% 57%, 100% 69%, 98% 76%, 100% 81%, 98% 89%, 100% 94%, 100% 100%, 95% 99%, 89% 97%, 86% 100%, 80% 98%, 77% 100%, 71% 98%, 66% 100%, 63% 98%, 56% 100%, 52% 97%, 47% 99%, 42% 95%, 36% 99%, 31% 97%, 27% 100%, 20% 97%, 17% 100%, 11% 96%, 5% 100%, 0% 100%, 3% 94%, 0% 89%, 0% 69%, 4% 60%, 0% 59%, 0% 42%, 4% 32%, 0% 29%, 0% 14%, 3% 9%, 0% 5%, 1% 0%, 13% 4%, 23% 0%, 36% 1%, 46% 0%, 53% 2%, 73% 0%, 83% 4%, 92% 0%);
 }
 
 .letter h5
@@ -66,4 +59,27 @@ main,
 .letter h6
 {
     text-align: right;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .ribbon
+    {
+        justify-self: left;
+        padding-left: 0;
+    }
+
+    .ribbon .ribbon-wrap
+    {
+        border-left: none;
+    }
+
+    .letter
+    {
+        width: 50%;
+        min-width: 16em;
+        font-size: 1.75em;
+        padding: 2em;
+        clip-path: polygon(100% 0%, 96% 4%, 100% 9%, 92% 10%, 100% 17%, 98% 23%, 100% 27%, 97% 31%, 100% 37%, 96% 42%, 97% 47%, 99% 53%, 100% 57%, 100% 69%, 98% 76%, 100% 81%, 98% 89%, 100% 94%, 100% 100%, 95% 99%, 89% 97%, 86% 100%, 80% 98%, 77% 100%, 71% 98%, 66% 100%, 63% 98%, 56% 100%, 52% 97%, 47% 99%, 42% 95%, 36% 99%, 31% 97%, 27% 100%, 20% 97%, 17% 100%, 11% 96%, 5% 100%, 0% 100%, 3% 94%, 0% 89%, 0% 69%, 4% 60%, 0% 59%, 0% 42%, 4% 32%, 0% 29%, 0% 14%, 3% 9%, 0% 5%, 1% 0%, 13% 4%, 23% 0%, 36% 1%, 46% 0%, 53% 2%, 73% 0%, 83% 4%, 92% 0%);
+    }
 }

@@ -12,20 +12,20 @@ div.wrapper
     min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    width: 100%;
     background: 
     linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)),
     no-repeat fixed center/cover url('/lib/images/world.png');
     grid-template-areas: 
-        "nav nav nav"
-        "main main main"
-        "footer footer footer"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
 }
 
 main,
 .main 
 {
-    padding: 2em;
-    padding-left: 0;
+    padding: 0.5em;
     grid-area: main;
 }
 
@@ -36,14 +36,31 @@ footer,
     color: #AAA;
     padding-top: 2em;
     padding-bottom: 2em;
+    padding-left: 2em;
     background-color: #111;
     background-image: url('/lib/images/dark-leather.png');
-    text-align: center;
     font-size: 0.75em;
 }
 
-nav,
 .nav 
 {
     grid-area: nav;
+}
+
+@media screen and (min-width: 1024px)
+{
+    main,
+    .main
+    {
+        padding: 2em;
+        padding-left: 0;
+    }
+
+    footer,
+    .footer
+    {
+        text-align: center;
+        padding-left: 0;
+    }
+
 }
