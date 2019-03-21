@@ -18,13 +18,16 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav class="nav">
+        <label class="nav">
+            <input type="checkbox" class="nav-check">
             <ul class="topnav">
             {%- for page in collections.topic -%}
                 <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
             {%- endfor -%}
+                <li class="nav-arrow"><span>▲</span></li>
             </ul>
-        </nav>
+            
+        </label>
         <main class="main">
             {{content | safe}}
         </main>

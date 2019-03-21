@@ -15,10 +15,37 @@
     padding: 0;
 }
 
-.topnav li a
+.topnav li a,
+.topnav li.nav-arrow span
 {
     display: block;
+    text-align: center;
     padding: 1em;
+
+    overflow: hidden;
+    max-height: 2em;
+    transition: max-height 0.25s linear, padding 0.25s step-start;
+}
+
+.topnav .nav-arrow
+{
+    text-align: center;
+}
+
+.nav-check
+{
+    display: none;
+}
+
+.nav-check ~ .topnav .nav-arrow > span
+{
+    display: inline-block;
+    transition: transform 0.25s linear;
+}
+
+.nav-check:checked ~ .topnav .nav-arrow > span
+{
+    transform: rotate(180deg);
 }
 
 .topnav li a:hover
@@ -26,10 +53,32 @@
     background-color: rgba(50, 50, 50, 0.5);
 }
 
+@media screen and (max-width: 1023px)
+{
+    .nav-check:checked ~ .topnav li a
+    {
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: max-height 0.25s linear, padding 0.25s step-end;
+    }   
+}
+
 @media screen and (min-width: 1024px)
 {
+
     .topnav
     {
         flex-direction: row;
+    }
+
+    .topnav li a
+    {
+        text-align: unset;
+    }
+
+    .nav .topnav .nav-arrow
+    {
+        display: none;
     }
 }
