@@ -1,5 +1,5 @@
 ---
-title: Airdbar Dessert
+title: Airdbar Desert
 ---
 
 ## The Airdbar Desert
